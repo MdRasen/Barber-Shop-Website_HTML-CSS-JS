@@ -12,10 +12,50 @@
     <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/fabicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    
+    <section id="header">
+        <div class="nav-bar">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <img src="assets/menu.png" alt="menu" class="menu" onclick="openmenu()">
+        </div>
+
+        <nav>
+            <ul class="nav-menu" id="sidemenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+
+                <img src="assets/close.png" alt="close" class="close" onclick="closemenu()">
+            </ul>
+        </nav>
+
+        <div class="header-contents">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair, Style Your Life</p>
+            <div class="header-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-600px";
+        }
+    </script>
 </body>
 
 </html>

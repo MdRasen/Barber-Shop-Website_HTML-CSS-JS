@@ -3,8 +3,135 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .html {
     scroll-behavior: smooth;
+}
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px 10%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    width: 25px;
+    cursor: pointer;
+}
+
+.header-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding-top: 120px;
+}
+
+.header-contents h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 130px;
+}
+
+.header-contents p {
+    font-size: 25px;
+}
+
+.header-contents .header-btn {
+    margin: 30px 0;
+}
+
+.header-contents .header-btn a {
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #fff;
+    padding: 8px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.header-contents .header-btn a span {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.header-contents .header-btn a:hover span {
+    width: 100%;
+}
+
+.header-contents .header-btn a:hover {
+    color: #000;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    background: #009688;
+    height: 100%;
+    width: 220px;
+    z-index: 2;
+    padding-top: 130px;
+    transition: right 0.5s;
+}
+
+.nav-menu li {
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 25px;
+    cursor: pointer;
+}
+
+/* CSS for small screen */
+@media only screen and (max-width: 750px) {
+
+    .header-contents h1 {
+        font-size: 80px;
+    }
+
+    .header-contents p {
+        font-size: 13px;
+    }
+
+    .header-contents .header-btn a {
+        margin: 5px 0;
+    }
 }
