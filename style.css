@@ -134,7 +134,7 @@
     padding-bottom: 20px;
 }
 
-.title-text{
+.title-text {
     text-align: center;
 }
 
@@ -296,7 +296,7 @@
     padding: 60px 0;
 }
 
-.testimonial{
+.testimonial {
     width: 100%;
     flex-basis: 32%;
     cursor: pointer;
@@ -306,37 +306,123 @@
     transition: transform 0.5s;
 }
 
-.testimonial .header{
+.testimonial .header {
     display: flex;
     justify-content: start;
     align-items: center;
     font-size: 14px;
 }
 
-.testimonial .header img{
+.testimonial .header img {
     width: 40px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.testimonial .header .user h4 i{
+.testimonial .header .user h4 i {
     font-size: 16px;
     padding-left: 5px;
     color: #009688;
 }
 
-.testimonial .header .user p{
+.testimonial .header .user p {
     font-size: 14px;
     color: #009688;
 }
 
-.testimonial .body p{
+.testimonial .body p {
     font-size: 16px;
 }
 
-.testimonial:hover{
+.testimonial:hover {
     transform: translateY(-10px);
 }
+
+/* Footer Section */
+#footer {
+    padding: 70px 6% 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footer-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    width: 300px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content div {
+    padding: 60px 20px 30px;
+    font-size: 16px;
+}
+
+.footer-content div h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.footer-content .left {
+    text-align: left;
+}
+
+.footer-content .left p i {
+    padding-right: 10px;
+    color: #009688;
+}
+
+.footer-content .right {
+    text-align: right;
+}
+
+.footer-content .right p i {
+    padding-left: 10px;
+    color: #009688;
+}
+
+.footer-bottom {
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.social-icon {
+    padding: 80px 0 30px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid #019587;
+    color: #009688;
+    margin: 10px 5px;
+    border-radius: 4px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.social-icon a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+.copyright i {
+    color: red;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
 
 /* CSS for small screen */
 @media only screen and (max-width: 750px) {
@@ -354,7 +440,7 @@
     }
 
     #features {
-        padding: 100px 4%;
+        padding: 100px 4% 50px;
     }
 
     .title-text h2 {
@@ -380,18 +466,18 @@
     }
 
     #services {
-        padding: 0 8%;
+        padding: 70px 8% 20px;
     }
 
     .services-content {
         flex-direction: column;
     }
 
-    .overlay-content h3{
+    .overlay-content h3 {
         font-size: 18px;
     }
 
-    .overlay-content p{
+    .overlay-content p {
         font-size: 16px;
     }
 
