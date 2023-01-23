@@ -134,6 +134,10 @@
     padding-bottom: 20px;
 }
 
+.title-text{
+    text-align: center;
+}
+
 .title-text p {
     font-size: 20px;
     color: #009688;
@@ -209,8 +213,8 @@
 
 /* Services section */
 #services {
-    padding: 20px 14%;
-    text-align: center;
+    padding: 70px 14% 20px;
+    background: #efefef;
 }
 
 .services-content {
@@ -245,6 +249,7 @@
     cursor: pointer;
     color: #fff;
     transition: opacity 0.5s;
+    text-align: center;
 }
 
 .service:hover .overlay {
@@ -276,6 +281,61 @@
 .service:hover .overlay-content {
     opacity: 1;
     left: 50%;
+}
+
+/* Testimonials section */
+#testimonials {
+    padding: 70px 10% 20px;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.testimonial{
+    width: 100%;
+    flex-basis: 32%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    padding: 20px 15px;
+    transition: transform 0.5s;
+}
+
+.testimonial .header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+}
+
+.testimonial .header img{
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.testimonial .header .user h4 i{
+    font-size: 16px;
+    padding-left: 5px;
+    color: #009688;
+}
+
+.testimonial .header .user p{
+    font-size: 14px;
+    color: #009688;
+}
+
+.testimonial .body p{
+    font-size: 16px;
+}
+
+.testimonial:hover{
+    transform: translateY(-10px);
 }
 
 /* CSS for small screen */
@@ -333,5 +393,9 @@
 
     .overlay-content p{
         font-size: 16px;
+    }
+
+    .testimonials-content {
+        flex-direction: column;
     }
 }
